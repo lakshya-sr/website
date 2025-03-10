@@ -1,0 +1,162 @@
+
+/* Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Typography */
+h1, h2, h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #cccccc;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #00bcd4;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Sections */
+section {
+  margin-top: 40px;
+}
+
+/* Projects & Experience */
+article {
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1e1e1e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Links */
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #26d9e8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #333;
+}
+
+/* Contact Links */
+#contact p a {
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#contact p a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: #00bcd4;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s ease;
+}
+
+#contact p a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
