@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="blogs">
+    {% for blog in blogs_list %}
+        <a href={{ blog.link }}>
+            <article>
+                <h3>{{ blog.title }}</h3>
+                <p>{{ blog.summary }}</p>
+            </article>
+        </a>
+    {% endfor %}
+</section>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="services">
+    {% for service in services %}
+        <a href="{{ service.link }}">
+            <article>
+                <h3>{{ service.name }}</h3>
+                <p>{{ service.description }}</p>
+            </article>
+        </a>
+    {% endfor %}
+</section>
+
+{% endblock %}

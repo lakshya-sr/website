@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Fluid Simulation",
+        "summary": "A particle based fluid simulator written in C",
+        "link": "https://github.com/lakshya-sr/fluidsim"
+    },
+
+    {
+        "title": "Animation Library",
+        "summary": "Made a programmatic animation library to make interactive animations in Python."
+    },
+
+    {
+        "title": "Social Network Simulation",
+        "summary": "Created a simulation of a social network and analyse propagation of information in the network"
+    },
+
+    {
+        "title": "Tic Tac Toe Solver",
+        "summary": "Attempt to create a tic tac toe bot using different approaches"
+    }
+]

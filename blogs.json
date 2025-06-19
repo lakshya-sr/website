@@ -1,0 +1,7 @@
+[
+    {
+        "title": "Fluid Simulation using balls",
+        "summary": "In this article we will look at how we can use small balls colliding to simulate fluids.",
+        "contents": "fluid-simulation.md"
+    }
+]
