@@ -22,7 +22,7 @@ def load_blogs():
         blogs = json.load(f)
         for blog in blogs:
             with open(f"blogs/{blog['contents']}") as f2:
-                blog['contents'] = f.read()
+                blog['contents'] = f2.read()
             blog['images'] = re.findall("!\[]\((.*)\)", blog['contents'])
 
         return blogs
@@ -34,7 +34,8 @@ def load_services():
 
 def render_markdown(text, path):
     import markdown
-    return markdown.markdown(text)
+    contents = markdown.markdown(text)
+    return contents
 
 def copy_file(src, dst):
     try:
